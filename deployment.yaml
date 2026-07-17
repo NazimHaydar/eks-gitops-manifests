@@ -4,7 +4,7 @@ metadata:
   name: my-devops-app
   namespace: default
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: my-devops-app
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: my-devops-app
-        image: 618642321171.dkr.ecr.us-east-1.amazonaws.com/my-devops-ap:latest
+        image: 618642321171.dkr.ecr.us-east-1.amazonaws.com/my-devops-app:latest
         ports:
         - containerPort: 80
 ---
